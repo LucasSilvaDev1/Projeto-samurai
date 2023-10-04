@@ -26,7 +26,22 @@ body {
     background-image: url(../imagens/imagem.jpg);
     background-attachment: fixed;
     background-position: bottom right;
+    background-repeat:repeat;
     
+}
+
+.menu {
+    display: flex;
+    background-color: #2A403C;
+    align-items: center;
+    justify-content: end;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
 }
 
 h1 {
@@ -55,20 +70,34 @@ img{
     text-align: center;
     display: block;
     margin: auto;
+    width: 40vw;
+}
+
+.p1,.p2,.p3 {
+    display: flex;
+    align-items: center;
 }
     
 
 .footer {
-    display: flex;
-    background-color: #2a403c;
-    justify-content: center;
-    font-size: large;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0;
+    background-color: #2A403C;
+    padding: 10px;
+    text-align: center;
 }
 
-@media (width:800px;){
+.footer p {
+    font-size: large;
+    text-align: center;
+}
+
+@media (min-width:700px) {
+    .p1,.p2,.p3 {
+        display: block;
+    }
+
     
 }
+
+
+
     
